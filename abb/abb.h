@@ -28,7 +28,7 @@ typedef struct _nodo{
 typedef Nodo Abb;
 
 
-Abb *creaAbbVacio(){
+Abb *creaAbbVacio(){        //debe de estar la estructura creada pero generarla vacía
     return(NULL);
 }
 
@@ -129,7 +129,30 @@ Abb *eliminaValorAbb(Abb *arbol, int valor){
 }
 
 //busca min
+
+void buscaMin(Abb *arbol){
+    
+    if(arbol->hizq != NULL){
+        buscaMin(arbol->hizq);
+    }
+    if(arbol->hizq == NULL){
+        printf("EL MIN ES = %i\n", arbol->dato);
+    }
+}
+
+
+
 //busca max
+
+void buscaMax(Abb *arbol){
+    if(arbol->hder != NULL){
+        buscaMax(arbol->hder);
+    }
+    if(arbol->hder == NULL){
+        printf("EL MAX ES = %i\n", arbol->hizq);
+    }
+}
+
 
 //recorre en orden
 void recorreAbbEnOrden(Abb *arbol){

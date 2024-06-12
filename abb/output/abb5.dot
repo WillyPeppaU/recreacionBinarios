@@ -1,0 +1,7 @@
+digraph abb5
+ {
+5 -> 3 [label="hi"]
+5 -> 25 [label="hd"]
+25 -> 30 [label="hd"]
+30 -> 99999999 [label="hd"]
+}

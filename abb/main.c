@@ -25,10 +25,11 @@
 int main(int argc, const char * argv[]) {
     Abb *arbol = creaAbbVacio();
     arbol = insertaValorAbb(arbol,5);
-    arbol = insertaValorAbb(arbol,8);
+    arbol = insertaValorAbb(arbol,25);
+    arbol = insertaValorAbb(arbol,30);
     arbol = insertaValorAbb(arbol,3);
-    arbol = insertaValorAbb(arbol,9);
-    arbol = insertaValorAbb(arbol,7);
+    arbol = insertaValorAbb(arbol,99999999);
+    
     
     recorreAbbEnOrden(arbol);
     
@@ -42,6 +43,9 @@ int main(int argc, const char * argv[]) {
     printf("\n");
     buscaValorRutaAbb(arbol, 10);
     printf("\n");
+
+    buscaMin(arbol);
+    buscaMax(arbol);
 
     return 0;
 }
