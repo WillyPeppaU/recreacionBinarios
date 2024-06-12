@@ -149,7 +149,7 @@ void buscaMax(Abb *arbol){
         buscaMax(arbol->hder);
     }
     if(arbol->hder == NULL){
-        printf("EL MAX ES = %i\n", arbol->hizq);
+        printf("EL MAX ES = %i\n", arbol->dato);
     }
 }
 

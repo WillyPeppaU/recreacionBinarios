@@ -26,9 +26,9 @@ int main(int argc, const char * argv[]) {
     Abb *arbol = creaAbbVacio();
     arbol = insertaValorAbb(arbol,5);
     arbol = insertaValorAbb(arbol,25);
-    arbol = insertaValorAbb(arbol,30);
-    arbol = insertaValorAbb(arbol,3);
     arbol = insertaValorAbb(arbol,99999999);
+    arbol = insertaValorAbb(arbol,3);
+    arbol = insertaValorAbb(arbol,4);
     
     
     recorreAbbEnOrden(arbol);

@@ -1,7 +1,7 @@
 digraph abb5
  {
+3 -> 4 [label="hd"]
 5 -> 3 [label="hi"]
 5 -> 25 [label="hd"]
-25 -> 30 [label="hd"]
-30 -> 99999999 [label="hd"]
+25 -> 99999999 [label="hd"]
 }
